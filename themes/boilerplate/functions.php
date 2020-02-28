@@ -5,8 +5,8 @@ require_once( __DIR__ . '/includes/scss.php' );
 /**
  * Register css and js to be enqueued specifically on template files or partials
  */
-if( ! function_exists('bt_register_scripts') ) {
-  function bt_register_scripts() {
+if( ! function_exists('boilerplate_register_scripts') ) {
+  function boilerplate_register_scripts() {
 
     // css
     wp_register_style( 'roboto', 'https://fonts.googleapis.com/css?family=Roboto:400,400i,700&display=swap' );
@@ -26,14 +26,14 @@ if( ! function_exists('bt_register_scripts') ) {
     wp_register_script( 'scrollmagic', get_bloginfo('template_url') . '/vendors/scrollmagic/js/scrollmagic.js', ['jquery'], '2.0.7', true );
     wp_register_script( 'addindicators', get_bloginfo('template_url') . '/vendors/scrollmagic/js/addindicators.js', [ 'jquery', 'scrollmagic' ], '2.0.7', true );
   }
-  add_action( 'init', 'bt_register_scripts' );
+  add_action( 'init', 'boilerplate_register_scripts' );
 }
 
 /**
  * Enqueue global css and js
  */
-if( ! function_exists('bt_scripts') ) {
-  function bt_scripts() {
+if( ! function_exists('boilerplate_scripts') ) {
+  function boilerplate_scripts() {
     wp_enqueue_style('roboto');
     wp_enqueue_style('bootstrap');
     wp_enqueue_style('slick');
@@ -47,5 +47,5 @@ if( ! function_exists('bt_scripts') ) {
     wp_enqueue_script('scrollmagic');
     wp_enqueue_script('addindicators');
   }
-  add_action( 'wp_enqueue_scripts', 'bt_scripts' );
+  add_action( 'wp_enqueue_scripts', 'boilerplate_scripts' );
 }
