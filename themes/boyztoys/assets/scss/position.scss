@@ -1,0 +1,43 @@
+.zindex {
+  &-1 { z-index: 1 !important }
+  &-2 { z-index: 2 !important }
+  &-3 { z-index: 3 !important }
+  &-10 { z-index: 10 !important }
+  &-20 { z-index: 20 !important }
+}
+
+.top {
+  &-0 { top: 0; }
+  &-1 { top: .25rem; }
+  &-2 { top: .5rem; }
+  &-3 { top: 1rem; }
+  &-4 { top: 1.5rem; }
+  &-5 { top: 3rem; }
+}
+
+.right {
+  &-0 { right: 0; }
+  &-1 { right: .25rem; }
+  &-2 { right: .5rem; }
+  &-3 { right: 1rem; }
+  &-4 { right: 1.5rem; }
+  &-5 { right: 3rem; }
+}
+
+.bottom {
+  &-0 { bottom: 0; }
+  &-1 { bottom: .25rem; }
+  &-2 { bottom: .5rem; }
+  &-3 { bottom: 1rem; }
+  &-4 { bottom: 1.5rem; }
+  &-5 { bottom: 3rem; }
+}
+
+.left {
+  &-0 { left: 0; }
+  &-1 { left: .25rem; }
+  &-2 { left: .5rem; }
+  &-3 { left: 1rem; }
+  &-4 { left: 1.5rem; }
+  &-5 { left: 3rem; }
+}

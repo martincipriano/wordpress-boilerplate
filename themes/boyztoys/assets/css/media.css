@@ -1,0 +1,56 @@
+.media-1-1, .media-4-3, .media-16-9 {
+  overflow: hidden;
+  position: relative;
+}
+.media-1-1::before, .media-4-3::before, .media-16-9::before {
+  content: '';
+  display: block;
+}
+.media-1-1 > img, .media-4-3 > img, .media-16-9 > img, .media-1-1 > picture, .media-4-3 > picture, .media-16-9 > picture, .media-1-1 > video, .media-4-3 > video, .media-16-9 > video, .media-1-1 > iframe, .media-4-3 > iframe, .media-16-9 > iframe {
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.media-1-1::before {
+  padding-top: 100%;
+}
+.media-4-3::before {
+  padding-top: 75%;
+}
+.media-16-9::before {
+  padding-top: 56.25%;
+}
+.object-cover {
+  object-fit: cover;
+}
+.object-left-center {
+  object-position: left center;
+}
+.object-center-center {
+  object-position: center center;
+}
+.object-right-center {
+  object-position: right center;
+}
+.object-left-bottom {
+  object-position: left bottom;
+}
+.object-center-bottom {
+  object-position: center bottom;
+}
+.object-right-bottom {
+  object-position: right bottom;
+}
+.object-left-top {
+  object-position: left top;
+}
+.object-center-top {
+  object-position: center top;
+}
+.object-right-top {
+  object-position: right top;
+}

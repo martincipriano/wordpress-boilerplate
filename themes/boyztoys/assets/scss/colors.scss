@@ -1,0 +1,58 @@
+body { color: $dark }
+
+.bg {
+  &-black { background-color: $black !important }
+  &-danger { background-color: $danger !important }
+  &-dark { background-color: $dark !important }
+  &-light { background-color: $light !important }
+  &-primary { background-color: $primary !important }
+  &-success { background-color: $success !important }
+  &-warning { background-color: $warning !important }
+  &-white { background-color: $white !important }
+}
+
+.text {
+  &-black { color: $black !important }
+  &-danger { color: $danger !important }
+  &-dark { color: $dark !important }
+  &-light { color: $light !important }
+  &-primary { color: $primary !important }
+  &-success { color: $success !important }
+  &-warning { color: $warning !important }
+  &-white { color: $white !important }
+}
+
+.btn {
+  &-black {
+    background-color: $black !important;
+    border-color: $black !important
+  }
+  &-danger {
+    background-color: $danger !important;
+    border-color: $danger !important
+  }
+  &-dark {
+    background-color: $dark !important;
+    border-color: $dark !important
+  }
+  &-light {
+    background-color: $light !important;
+    border-color: $light !important
+  }
+  &-primary {
+    background-color: $primary !important;
+    border-color: $primary !important
+  }
+  &-success {
+    background-color: $success !important;
+    border-color: $success !important
+  }
+  &-warning {
+    background-color: $warning !important;
+    border-color: $warning !important
+  }
+  &-white {
+    background-color: $white !important;
+    border-color: $white !important
+  }
+}
